@@ -19,23 +19,27 @@ public class Person {
 
 
 
+//    public Person(String firstName, String lastName, String address, String mobile) {
+////        this.id = id;
+//        this.firstName = firstName;
+//        this.lastName = lastName;
+//        this.address = address;
+//        this.mobile = mobile;
+//
+//    }
 
 
+    public Person() {
 
+    }
 
+    public String getAge() {
+        return age;
+    }
 
-
-
-
-
-
-
-
-
-
-
-
-
+    public void setAge(String age) {
+        this.age = age;
+    }
 
     public int getId() {
         return id;
@@ -66,6 +70,15 @@ public class Person {
     }
     public void setMobile(String mobile) {
         this.mobile = mobile;
+    }
+    @Override
+    public String toString() {
+        return "Person{" +
+                "firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", address='" + address + '\'' +
+                ", mobile='" + mobile + '\'' +
+                '}';
     }
 
 }
